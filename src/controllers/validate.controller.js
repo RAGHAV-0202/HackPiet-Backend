@@ -30,7 +30,7 @@ const upload = async (req, res) => {
     try {
         const { name, certificateNumber } = req.body;
 
-        if (typeof name !== "string" || typeof certificateNumber !== "string" || !name.trim() || !certificateNumber.trim()) {
+        if (!name.trim() || !certificateNumber.trim()) {
             return res.status(400).json("enter both name and certificate number");
         }
 
