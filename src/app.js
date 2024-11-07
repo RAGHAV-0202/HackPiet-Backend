@@ -8,8 +8,8 @@ const corsOptions = {
     origin: ["*" , "https://hackpiet.vercel.app"],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Cookie'],
-    credentials: true ,
-    sameSite: 'None'
+    // credentials: true ,
+    // sameSite: 'None'
 };
 
 app.use(express.json())
