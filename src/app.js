@@ -5,7 +5,7 @@ const app = express()
 import validateRoute from "./routes/validate.routes.js"
 
 const corsOptions = {
-    origin: ["*" , "https://hackpiet.vercel.app" , "http://127.0.0.1:5500],
+    origin: ["*" , "https://hackpiet.vercel.app" , "http://127.0.0.1:5500"],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type']
     // credentials: true ,
